@@ -1,35 +1,47 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include <vector>
+#include <iomanip>
 using namespace std;
 
 int main()
 {
-    int n, num = 0, inc, dec, maior = 0;	
-	cin >> n;
-	cin.ignore();
-	string line;
-	int r;
-	while( n--){
-		vector<int> array;
-        getline(cin,line);
-        stringstream ss(line);
-        while (ss >> r){
-           array.push_back(r);
-        }   
-        dec = array[0];
-        //cout << dec << "\n";
-        inc = array[1];
-        //cout << inc << "\n";
-        num -= dec;
-        num += inc;
-        if(num > maior){
-           maior = num;    
-        }            
-	}
-	cout << maior;
-
-    return 0;	
-	
+	/*
+    int n, num, dec, inc, maior = 0;
+    cin >> n;
+    cin.ignore();
+    int array[2] = {0};
+    string line;
+    stringstream ss(line);
+    int temp;
+    while (n--){
+         getline(cin, line);
+         for(int i=0; i < 2; i++){
+			 ss >> temp;
+			 array[i] = temp;
+	     }
+         dec = array[0];
+         inc = array[1];
+         num -= dec;
+         num += inc;
+         if(num > maior){
+             maior = num;
+         }
+    
+    }
+    
+    
+    cout << maior;
+    */
+    
+    double n;
+    cin >> n;
+    cout <<  setprecision(4) << fixed <<"A=" << 3.14159 * (n * n) << endl; 
+    
+    
+    
+    
+    
+     
+    return 0;
 }

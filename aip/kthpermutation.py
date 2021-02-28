@@ -21,4 +21,5 @@ def get_permutation(A, k):
     return(ans)
 
 if __name__ == "__main__":
-    print(get_permutation("1234", 14))
+    for i in range(1, 362881):
+        print(get_permutation("123456789", i))

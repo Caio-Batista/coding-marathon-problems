@@ -13,4 +13,4 @@ def kangaroo(x1, v1, x2, v2):
         return 'NO'
 
 if __name__ == '__main__':
-    kangaroo(0,3,4,2)
+    print(kangaroo(0,3,4,2))
